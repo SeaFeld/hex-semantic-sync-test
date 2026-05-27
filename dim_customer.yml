@@ -1,6 +1,6 @@
 id: dim_customer
 type: model
-description: Customer dimensions including account, location, ARR, and key dates
+description: Customer dimensions including account, location, ARR, and key dates new updates!!
 base_sql_table: '"REPORTING"."B2B_DEV"."DIM_CUSTOMER"'
 measures:
   - id: count_of_records
