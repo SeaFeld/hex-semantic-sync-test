@@ -9,7 +9,7 @@ env:
   TOKEN: ${{ secrets.HEX_SEMANTIC_INGEST_TOKEN }}
   # The top level directory containing your Hex files.
   # By default this is your entire repository, but you can update this is you only want to zip a specific subdirectory.
-  DIRECTORY: .
+  DIRECTORY: ./models
 jobs:
   hex-semantic-project-ingest:
     runs-on: ubuntu-latest
