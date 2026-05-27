@@ -1,0 +1,31 @@
+id: dim_customer
+type: model
+description: Customer dimensions including account, location, ARR, and key dates
+base_sql_table: '"REPORTING"."B2B_DEV"."DIM_CUSTOMER"'
+measures:
+  - id: count_of_records
+    func: count
+dimensions:
+  - id: account_id
+    type: string
+  - id: renewal_date
+    type: date
+  - id: land_date
+    type: date
+  - id: last_expansion_date
+    type: date
+  - id: total_arr
+    type: number
+  - id: customer_id
+    type: string
+    unique: true
+  - id: lat
+    type: string
+  - id: lon
+    type: string
+  - id: city
+    type: string
+  - id: country
+    type: string
+  - id: region
+    type: string
