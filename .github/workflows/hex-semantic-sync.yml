@@ -1,5 +1,5 @@
 name: Hex Semantic Project Ingest
-on: # This configures when this workflow will be triggered. This can be further customized to only run when certain files change, etc.
+on: # This configures when this workflow will be triggered. This can be further customized to only run when certain files change, etc. updating
   pull_request: # Run on every pull request
   push: # Run on every push to the main or master branch.
     branches:
