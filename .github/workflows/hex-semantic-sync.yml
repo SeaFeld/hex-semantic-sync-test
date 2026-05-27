@@ -33,7 +33,7 @@ jobs:
       run: |
           response=$(curl -s -w "%{http_code}" -o response.txt -X POST \
             -F "data=@$DIRECTORY/repo.zip" \
-            https://rc.hex.tech/api/v1/semantic-projects/019e6b89-fb66-74d2-b1bc-7ca0153809ec \
+            https://rc.hex.tech/api/v1/semantic-models/019e6b89-fb66-74d2-b1bc-7ca0153809ec/ingest \
             -H "Authorization: Bearer $TOKEN")
           if [ "$response" -eq 201 ]; then
             echo "✅ Successfully ingested semantic project"
